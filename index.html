@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <title>Моя компания</title>
+</head>
+<body>
+    <div class = "bar">
+        <p class = "name">Моя компания</p>
+        <div class = "buttons">
+            <button id = "btn-modal-window" class = "order">Сделать заказ</button>
+            <div id = "my-modal" class = "modal">
+                <div class = "modal-content">
+                    <span class = "close-modal-window">×</span>
+                    <p class = "choice">Выберите услугу</p>
+                    <div class = "checkbox">
+                        <input type = "checkbox" onClick = "orderSite()">
+                        <p class = "option">Разработка сайта</p>
+                    </div>
+                    <div class = "checkbox">
+                        <input type = "checkbox" onClick = "orderMobile()">
+                        <p class = "option">Мобильная разработка</p>
+                    </div>
+                    <div class = "checkbox">
+                        <input type = "checkbox" onClick = "orderAudit()">
+                        <p class = "option">Аудит</p>
+                    </div>
+                    <button class = "btn-order">Заказать</button>
+                </div>
+            </div>
+            <button id = "btn-modal-registration" class = "registration">Регистрация</button>
+            <div id = "my-modal-registration" class = "modal">
+                <form class = "modal-content">
+                    <span class = "close-window">×</span>
+                    <p class = "choice">Регистрация</p>
+                    <div class = "checkbox">
+                        <p class = "option">Введите имя</p>
+                        <input type = "text" id = "names">
+                    </div>
+                    <div class = "checkbox">
+                        <p class = "option">Введите email</p>
+                        <input type = "email" name = "email" required id = "email">
+                        <div id="error"></div>
+                    </div>
+                    <div class = "checkbox">
+                        <p class = "option">Введите пароль</p>
+                        <input type = "text" id = "password">
+                    </div>
+                    <button class = "btn-registration">Зарегистрироваться</button>
+                </form>
+            </div>
+            <button id = "btn-modal-login" class = "login">Вход</button>
+            <div id = "my-modal-login" class = "modal">
+                <div class = "modal-content">
+                    <span class = "close-login">×</span>
+                    <p class = "choice">Вход</p>
+                    <div class = "checkbox">
+                        <p class = "option">Введите имя</p>
+                        <input type="text" id = "nick">
+                    </div>
+                    <div class = "checkbox">
+                        <p class = "option">Введите пароль</p>
+                        <input type="text" id = "parole">
+                    </div>
+                    <button class = "btn-login">Войти</button>
+                </div>
+            </div>
+        </div>   
+    </div>
+
+    <ul class = "about">
+        <li class = "slide showing">
+            <p class = "headline">Рады приветствовать вас на сайте копании</p>
+            <div class = "details">Наша миссия - сделать жизнь людей удобнее</div>
+        </li>
+        <li class = "slide">
+            <p class = "headline">Мы создаем сайты с 2021 года</p>
+            <div class = "details">Уже более 100 заказчиков довольны нашей работой</div>
+        </li>
+        <li class = "slide">
+                <p class = "headline">Сделаем сайт для любых целей</p>
+                <div class = "details">Функциональный дизайн. Адаптивная вёрстка под все устройства</div>
+        </li>
+    </ul>
+    
+    <p class = "heading">Наши услуги</p>
+    <div class = "services">
+        <div class = "service">
+            <p class = "service-name">Разработка сайта</p>
+            <div>Создание веб-сайта или веб-приложения на языке JavaScript</div>
+            <button id = "btn-modal-site" class = "ordred">Заказать</button>
+            <div id = "my-modal-site" class = "modal">
+                <div class = "modal-content">
+                    <span class = "btn-site">×</span>
+                    <p class = "choice">Выберите услугу</p>
+                    <div class = "checkbox">
+                        <input type = "checkbox" onClick = "orderSite()">
+                        <p class = "option">Разработка сайта</p>
+                    </div>
+                    <div class = "checkbox">
+                        <input type = "checkbox" onClick = "orderMobile()">
+                        <p class = "option">Мобильная разработка</p>
+                    </div>
+                    <div class = "checkbox">
+                        <input type = "checkbox" onClick = "orderAudit()">
+                        <p class = "option">Аудит</p>
+                    </div>
+                    <button class = "close-site">Заказать</button>
+                </div>
+            </div>
+        </div>
+        <div class = "service">
+            <p class = "service-name">Мобильная разработка</p>
+            <div>Разработка приложений для небольших портативных устройтв</div>
+            <button id = "btn-modal-mobile" class = "ordred">Заказать</button>
+            <div id = "my-modal-mobile" class = "modal">
+                <div class = "modal-content">
+                    <span class = "btn-mobile">×</span>
+                    <p class = "choice">Выберите услугу</p>
+                    <div class = "checkbox">
+                        <input type = "checkbox" onClick = "orderSite()">
+                        <p class = "option">Разработка сайта</p>
+                    </div>
+                    <div class = "checkbox">
+                        <input type = "checkbox" onClick = "orderMobile()">
+                        <p class = "option">Мобильная разработка</p>
+                    </div>
+                    <div class = "checkbox">
+                        <input type = "checkbox" onClick = "orderAudit()">
+                        <p class = "option">Аудит</p>
+                    </div>
+                    <button class = "close-mobile">Заказать</button>
+                </div>
+            </div>
+        </div>
+        <div class = "service">
+            <p class = "service-name">Аудит</p>
+            <div>Проведение аудита и предоставление отчета с рекомендациями</div>
+            <button id = "btn-modal-audit" class = "ordred">Заказать</button>
+            <div id = "my-modal-audit" class = "modal">
+                <div class = "modal-content">
+                    <span class = "btn-audit">×</span>
+                    <p class = "choice">Выберите услугу</p>
+                    <div class = "checkbox">
+                        <input type = "checkbox" onClick = "orderSite()">
+                        <p class = "option">Разработка сайта</p>
+                    </div>
+                    <div class = "checkbox">
+                        <input type = "checkbox" onClick = "orderMobile()">
+                        <p class = "option">Мобильная разработка</p>
+                    </div>
+                    <div class = "checkbox">
+                        <input type = "checkbox" onClick = "orderAudit()">
+                        <p class = "option">Аудит</p>
+                    </div>
+                    <button class = "close-audit">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class = "heading">Наши партнёры</p>
+    <div class = "partners">
+        <div class = "company">
+            <div class = "logotype">
+                <img class = "logo" src = "https://img.artlebedev.ru/everything/umbrellaitcom/identity/umbrella-logo-1.png">        
+            </div>
+            <p class = "title">Umbrella</p>
+            <div class = "description">Компания, предоставляющая услуги по разработке и IT-консалтингу</div>
+            <a href = "https://umbrellait.com/ru/" class = "more" onClick = "clickUmbrella()">Подробнее</a>
+        </div>
+        <div class = "company">
+            <div class = "logotype">
+                <img class = "logo" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Yandex_logo_ru.svg/1200px-Yandex_logo_ru.svg.png">        
+            </div>
+            <p class = "title">Яндекс</p>
+            <div class = "description">Российская транснациональная компания в отрасли информационных технологий, чьё головное юридическое лицо зарегистрировано в Нидерландах, владеющая одноимённой системой поиска в интернете, интернет-порталом и веб-службами в нескольких странах</div>
+            <a href = "https://yandex.ru/" class = "more" onClick = "clickYandex()">Подробнее</a>
+        </div>
+        <div class = "company">
+            <div class = "logotype">
+                <img class = "logo" src = "https://free-png.ru/wp-content/uploads/2020/11/b64cc812d68e951149b3e1a21c9a49e7-35dd74d8.png">        
+            </div>
+            <p class = "title">Google</p>
+            <div class = "description">Американская транснациональная корпорация, в составе холдинга Alphabet, инвестирующая в интернет-поиск, облачные вычисления и рекламные технологии</div>
+            <a href = "https://www.google.ru/" class = "more" onClick = "clickGoogle()">Подробнее</a>
+        </div>
+        <div class = "company">
+            <div class = "logotype">
+                <img class = "logo" src = "https://www.tadviser.ru/images/6/68/Logo_LANIT.png"> 
+            </div>
+            <p class = "title">ЛАНИТ</p>
+            <div class = "description">Группа компаний на российском рынке информационных технологий. Предоставляет комплекс ИТ-услуг, обеспечивающих этапы выполнения проекта от разработки и внедрения до обучения персонала и сервисной поддержки</div>
+            <a href = "https://www.lanit.ru/" class = "more" onClick = "clickLanit()">Подробнее</a>
+        </div>
+        <div class = "company">
+            <div class = "logotype">
+                <img class = "logo" src = "https://42clouds.com/images/ru-ru/product/zagruzka-iz-ozon/logo.png">
+            </div>
+            <p class = "title">Ozon</p>
+            <div class = "description">Старейший российский универсальный интернет-магазин и один из лидеров рынка</div>
+            <a href = "https://www.ozon.ru/" class = "more" onClick = "clickOzon()">Подробнее</a>
+        </div>
+        <div class = "company">
+            <div class = "logotype">
+                <img class = "logo" src = "https://softline.ru/uploads/files/c96e35/e6b55a/8c9730/Logo_Softline_RGB.png">
+            </div>
+            <p class = "title">Softline</p>
+            <div class = "description">Международная ИТ-компания, поставщик ИТ-решений и сервисов, работающий на рынках России, восточной Европы, центральной Азии, Америки, Индии и Юго-Восточной Азии. Компания представлена в 95 городах более чем 55 стран</div>
+            <a href = "https://softline.ru/" class = "more" onClick = "clickSoftline()">Подробнее</a>
+        </div>
+        <div class = "company">
+            <div class = "logotype">
+                <img class = "logo" src = "https://dsmedia.pro/files/storage/56/dd/42/marvel-distribution-logo.png">
+            </div>
+            <p class = "title">Марвел-Дистрибуция</p>
+            <div class = "description">Один из крупнейших широкопрофильных IT-дистрибуторов России и СНГ</div>
+            <a href = "https://www.marvel.ru/" class = "more" onClick = "clickMarvel()">Подробнее</a>
+        </div>
+        <div class = "company">
+            <div class = "logotype">
+                <img class = "logo" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Lamoda_logo.svg/2560px-Lamoda_logo.svg.png">
+            </div>
+            <p class = "title">Lamoda Tech</p>
+            <div class = "description">Онлайн-ритейлер на рынке моды в России и странах СНГ, предлагающий своим клиентам более 3 миллионов товаров и 11 000 международных и локальных брендов модной одежды, обуви, аксессуаров, косметики и парфюмерии.</div>
+            <a href = "https://tech.lamoda.ru/" class = "more" onClick = "clickLamoda()">Подробнее</a>
+        </div>
+        <div class = "company">
+            <div class = "logotype">
+                <img class = "logo" src = "data:image/png;base64,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">
+            </div>
+            <p class = "title">OCS Distribution</p>
+            <div class = "description">Федеральный дистрибьютор высоких технологий, инженерных решений, компьютерной и бытовой техники</div>
+            <a href = "https://www.ocs.ru/" class = "more" onClick = "clickDistribution()">Подробнее</a>
+        </div>
+        <div class = "company">
+            <div class = "logotype">
+                <img class = "logo" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Rostec_logo.svg/1672px-Rostec_logo.svg.png">
+            </div>
+            <p class = "title">Ростех</p>
+            <div class = "description">Государственная корпорация по содействию разработке, производству и экспорту высокотехнологичной промышленной продукции «Ростех»</div>
+            <a href = "https://rostec.ru/" class = "more" onClick = "clickRostec()">Подробнее</a>
+        </div>
+    </div>
+
+    <div class = "slider">
+        <div class = "item">
+            <img class = "background" src = "https://img3.akspic.ru/originals/9/3/5/0/80539-osveshhenie-sinij_cvet-liniya-tehnologii-atmosfera-2800x1700.jpg">
+        </div>
+        <div class = "item">
+            <img class = "background" src = "https://png.pngtree.com/thumb_back/fh260/background/20201106/pngtree-digital-information-technology-network-vector-background-design-image_466270.jpg">
+        </div>
+        <div class = "item">
+            <img class = "background" src = "https://krot.info/uploads/posts/2021-01/1611864486_62-p-fon-it-63.jpg">
+        </div>
+        <div class = "item">
+            <img class = "background" src = "https://img1.akspic.ru/originals/9/0/2/9/2/129209-dvoichnoe_chislo-uzor-simmetriya-arhitektura-sinij-1920x1080.jpg">
+        </div>
+        <div class = "item">
+            <img class = "background" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6k51AlKu8_ATz2jEKmJ3x2Jl_8DBK8--YZA&usqp=CAU">
+        </div>
+        <a class = "previous" onclick = "previousPicture()">&#10094;</a>
+        <a class = "next" onclick = "nextPicture()">&#10095;</a>
+    </div>
+
+    <div id="qoo-counter">
+        <a href="http://askm.me/" title="Бесплатный счетчик посещений на сайт">
+            <img src="http://askm.me/counter/standard/009.png" alt="Счетчик посещаемости и статистика сайта">
+            <div id="qoo-counter-visits"></div>
+            <div id="qoo-counter-views"></div>
+        </a>
+    </div>
+    <script type="text/javascript" src="http://askm.me/counter.js"></script>
+    
+    <script src = "script.js"></script>
+</body>
+</html>
