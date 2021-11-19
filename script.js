@@ -8,7 +8,7 @@ let clickOrder = 0
 btn.onclick = function () {
     modal.style.display = "block";
     clickOrder = clickOrder + 1
-    console.log(clickOrder);
+    console.log("Нажали на кнопку сделать заказ " + clickOrder + " раз");
 }
 
 let closeOrder = 0
@@ -16,7 +16,7 @@ let closeOrder = 0
 span.onclick = function () {
     modal.style.display = "none";
     closeOrder = closeOrder + 1
-    console.log(closeOrder);
+    console.log("Закрыли окно сделать заказ " + closeOrder + " раз");
 }
 
 let doOrder = 0
@@ -24,7 +24,7 @@ let doOrder = 0
 button.onclick = function () {
     modal.style.display = "none";
     doOrder = doOrder + 1
-    console.log(doOrder);
+    console.log("Сделали заказ " + doOrder + " раз");
 }
 
 window.onclick = function (event) {
