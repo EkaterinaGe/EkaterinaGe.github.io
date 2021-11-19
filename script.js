@@ -37,7 +37,7 @@ let choiceSite = 0
 
 const orderSite = function () {
     choiceSite = choiceSite + 1
-    console.log("Выбрали сделать сайт " + choiceSite " раз");
+    console.log("Выбрали сделать сайт " + choiceSite + " раз");
 }
 
 let choiceMobile = 0
